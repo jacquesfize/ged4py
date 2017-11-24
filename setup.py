@@ -6,7 +6,7 @@ setup(
     packages=['ged4py',],
     author='Jacques Fize',
     license='MIT',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
