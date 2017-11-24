@@ -23,4 +23,4 @@ Then, use the `compare` function available in the `ged4py.algorithm`
 
 #  Acknowledgments
 
-This library is a modification of the code of available in [**haakondr/graph-edit-distance-python**](https://github.com/haakondr/graph-edit-distance-python). The core of the code was implemented by him, thus we'd like to thank him !
+This library is a modification of the code available in [**haakondr/graph-edit-distance-python**](https://github.com/haakondr/graph-edit-distance-python). The core of the code was implemented by him, thus we'd like to thank him !
