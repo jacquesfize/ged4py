@@ -4,6 +4,8 @@ from ged4py.algorithm.abstract_graph_edit_dist import AbstractGraphEditDistance
 from ged4py.algorithm.edge_edit_dist import EdgeEditDistance
 from ged4py.graph.edge_graph import EdgeGraph
 import sys
+from networkx import __version__ as nxv
+
 
 
 def compare(g1, g2, print_details=False):
@@ -44,8 +46,8 @@ class GraphEditDistance(AbstractGraphEditDistance):
         return 1
 
     def edge_diff(self, node1, node2):
-        edges1 = list(self.g1.edge[node1].keys())
-        edges2 = list(self.g2.edge[node2].keys())
+        edges1 = list(self.g1.edge[node1].keys()) if float(nxv) < 2 else list(self.g1.edges(node1))
+        edges2 = list(self.g2.edge[node2].keys()) if float(nxv) < 2 else list(self.g2.edges(node2))
         if len(edges1) == 0 or len(edges2) == 0:
             return max(len(edges1), len(edges2))
 

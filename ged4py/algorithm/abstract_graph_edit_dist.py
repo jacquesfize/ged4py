@@ -4,6 +4,7 @@ from __future__ import print_function
 from scipy.optimize import linear_sum_assignment
 import sys
 import numpy as np
+from networkx import __version__ as nxv
 
 
 class AbstractGraphEditDistance(object):
@@ -46,8 +47,8 @@ class AbstractGraphEditDistance(object):
         m = len(self.g2)
         cost_matrix = np.zeros((n+m,n+m))
         #cost_matrix = [[0 for i in range(n + m)] for j in range(n + m)]
-        nodes1 = self.g1.nodes()
-        nodes2 = self.g2.nodes()
+        nodes1 = self.g1.nodes() if float(nxv) < 2 else list(self.g1.nodes())
+        nodes2 = self.g2.nodes() if float(nxv) < 2 else list(self.g2.nodes())
 
         for i in range(n):
             for j in range(m):
