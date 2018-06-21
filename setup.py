@@ -1,9 +1,9 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='ged4py',
-    version='0.1dev',
-    packages=['ged4py',],
+    vAersion='0.1dev-a',
+    packages=find_packages(),
     author='Jacques Fize',
     license='MIT',
     long_description=open('README.md').read(),
