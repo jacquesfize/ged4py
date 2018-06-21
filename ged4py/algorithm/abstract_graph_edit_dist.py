@@ -78,7 +78,7 @@ class AbstractGraphEditDistance(object):
         print("cost matrix:")
         for column in self.create_cost_matrix():
             for row in column:
-                if row == sys.maxint:
+                if row == sys.maxsize:
                     print ("inf\t")
                 else:
                     print ("%.2f\t" % float(row))
