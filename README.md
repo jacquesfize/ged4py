@@ -2,7 +2,7 @@
 
 **ged4py** is an implementation of the graph edit distance for **Python3** and **NetworkX** users.
 
-## Depreciated
+## Deprecated
 
 Hi everyone, `ged4py` was the first part of a larger project: `gmatch4py`. Gmatch4py is a module that regroup Python implementations -- more particularly using Cython -- of GraphMatching algorithms. Algorithms such as the GED (graph edit distance) using the Munkres algorithms, are included in this new module and is more efficient thanks to Cython. For these reasons, this module won't be maintained anymore ! 
 
